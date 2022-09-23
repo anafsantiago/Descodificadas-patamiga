@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patamiga - Formulário</title>
+    <link rel="shortcut icon" href="imagens/icons/icon logo patamiga/logo patamiga.ico.png" type="image/x-icon">
+</head>
+<body>
+    <form action="">
+        <div>
+            <h1>Confirmação de presença na IX Feira de Adoção de Pets</h1>
+            <p>Preencha o formulário abaixo para confirmar a sua presença</p>
+            <p>Endereço do evento: Parque das Dunas, Av. Alm. Alexandrino de Alencar, s/n, Tirol, Natal, RN <br>
+            Ligue para (84) 1234-5678 ou envie um e-mail para patamiga@email.com</p>
+        </div>
+        
+        <div>
+            <label for="confirmar_presenca">Você pode participar?</label>
+        <br>
+        <input type="radio" class="opcao_presenca" name="opcao_presenca" value="sim" required>Sim
+        <input type="radio" class="opcao_presenca" name="opcao_presenca" value="nao" required>Não
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="nomes_participantes">Quais são os nomes das pessoas que participarão?</label>
+            <br>
+            <input type="text" class="nome_participantes" id="nome_participantes">
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="">Como você ouviu falar deste evento?</label>
+            <br>
+            <input type="radio" name="opcao_divulgacao" class="opcao_divulgacao" value="website" required>Website
+            <br>
+            <input type="radio" name="opcao_divulgacao" class="opcao_divulgacao" value="amigo" required>Amigo
+            <br>
+            <input type="radio" name="opcao_divulgacao" class="opcao_divulgacao" value="boletim informativo" required>Boletim informativo
+            <br>
+            <input type="radio" name="opcao_divulgacao" class="opcao_divulgacao" value="anuncio" required>Anúncio
+            <br>
+            <br>
+        </div>
+        <div>
+            <label for="comentarios">Comentários e/ou perguntas</label>
+            <br>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="submit" value="Limpar formulário">
+        </div>
+    </form>
+</body>
+</html>

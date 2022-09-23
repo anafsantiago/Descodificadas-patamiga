@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    color: #f6f6f6;
+}
+
+.pets_adocao h1{
+    color: #1c1c1c
+}
+
+.pets_adocao{
+    background-color: #69d7d4;
+}
+
+h1{
+    text-align: center;
+    color: #004aad;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    padding-top: 5%;
+    padding-bottom: 1.5%;
+    font-weight: bolder;
+}
+
+p {
+    text-align: center;
+    color: #1c1c1c;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.icons button{
+    
+    background-color: #fac600;
+    display: inline-block;
+    border: 0;
+    border-radius: 5%;
+    padding: 1%;
+    width: 300px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#local_p1{
+    text-align: left;
+}
+
+#local_p2{
+    text-align: right;
+}
+
+footer{
+    background-color: #ffdc52;
+}
+
