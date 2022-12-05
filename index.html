@@ -10,24 +10,33 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html" target="_self">
-            <img src="imagens/icons/icon logo patamiga/logo patamiga png.png" alt="logo" width="35px" height="40px">
-        </a>
-        <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif;">Patamiga</p>
+    <header class="header-container">
         <nav class="menu-topo">
-            <ul>
-                <li><a href="index.html" target="_self">Página Inicial</a></li>
-                <li><a href="participantes.html" target="_blank">Pets</a></li>
-                <li><a href="programacao.html" target="_blank">Programação</a></li>
-            </ul>              
+            <div class="header_logo">
+                <a href="index.html" target="_self">
+                    <img src="imagens/icons/icon logo patamiga/logo patamiga png.png" alt="logo_patamiga">
+                </a>
+    
+                <p style="font-size: 18px; font-family: Arial, Helvetica, sans-serif;">Patamiga</p>
+            </div>
+
+            <div class="menu">
+                <li>
+                    <a class="link-ativo" href="index.html" target="_self">Página Inicial</a>
+                </li>                
+                <li>
+                    <a href="participantes.html" target="_self">Pets</a>
+                </li>
+                <li>
+                    <a href="programacao.html" target="_self">Programação</a>
+                </li>
+            </div>                 
         </nav>
-        <img src="imagens/banners/FEIRA DE ADOÇÃO banners/1.png" alt="banner pets" width="100%" height="430">
     </header>
     
     <main>
-        <section>
-            <div class="sobre">
+        <section class="sobre">
+            <div class="sobre-texto">
                 <h1>Sobre a feira</h1>
                 <p>
                     Você sempre quis ter um pet ou está se sentindo meio sozinho? A IX feira de adoção da Patamiga pode te ajudar. Nela, reunimos vários cães e gatos resgatados das ruas e que estão em busca de um lar e de muito amor. Em troca, eles serão os seus melhores amigos e te acompanharão em todos os momentos.
@@ -38,81 +47,144 @@
                 <p>
                     Pensando nos outros pets que já têm um lar, também faremos uma campanha de vacinação. Então, caso você já tenha um pet que não esteja com as vacinas em dia, poderá vaciná-lo no evento.
                 </p>
-            </div>
+            </div>            
         </section>
 
-        <section>
-            <div class="icons">
-                <h1>Participe! Adotar é um ato de amor!</h1>
+        <section class="section2">
+            <h1>Participe! Adotar é um ato de amor!</h1>
+
+            <div class="botao">
                 <a href="formulario.html" target="_blank"><button>Confirmar presença</button></a>
-                <img src="imagens/icons/icons adocao/adocao png.png" alt="icon adocao">
-                <p>Adoção</p>
-                <img src="imagens/icons/icons adocao/vacina png.png" alt="icon vacinacao">
-                <p>Vacinação</p>
-                <img src="imagens/icons/icons adocao/amor png.png" alt="icon amor">
-                <p>E muuuuito amor</p>
+            </div>
+
+            <div class="icons">
+                <div class="icons1">
+                    <img src="imagens/icons/icons adocao/adocao png.png" alt="icon adocao">
+                    <p class="legenda" id="legenda-icons" >Adoção</p>
+                </div>
+                <div class="icons2">
+                    <img src="imagens/icons/icons adocao/vacina png.png" alt="icon vacinacao">
+                    <p class="legenda" id="legenda-icons">Vacinação</p>
+                </div>
+                    
+                <div class="icons3">
+                    <img src="imagens/icons/icons adocao/amor png.png" alt="icon amor">
+                    <p class="legenda" id="legenda-icons">E muuuuito amor</p>
+                </div>                
             </div>
         </section> 
 
-        <section>
-            <h1>Confira o que rolou na última edição</h1>
-            <div class="carrossel">
-                <!--COLOCAR CARROSEL DOS PETS-->
-                <img src="imagens/carrossel de fotos/adocao1.jpg" alt="adocao" width="640px" height="360px">
-                <img src="imagens/carrossel de fotos/cute-cats-eating-together-outdoors.jpg" alt="gatos_comendo" width="640px" height="360px">
-                <img src="imagens/carrossel de fotos/close-up-on-veterinarian-taking-care-of-dog.jpg" alt="vacina_cachorro" width="640px" height="360px">
-                <img src="imagens/carrossel de fotos/vacina gato.jpg" alt="vacina_gato" width="640px" height="360px">
-                <img src="imagens/carrossel de fotos/dog-ga3c354644_640.jpg" alt="cachorro_carinho" width="640px" height="360px">
-            </div>
-            <div class="video"> 
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UA799498NB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="video">
+            <h1>Confira o que rolou na última edição</h1>           
+            <div class="video-iframe"> 
+                <iframe width="800" height="550" src="https://www.youtube.com/embed/UA799498NB8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>    
             
-        <section>
-            <div class="pets_adocao">
+        <section class="pets_adocao">
+            <div class="pets_titulo">
                 <h1>Conheça os pets disponíveis para adoção</h1>
-                <img src="imagens/pets para adocao/bisteca cortado.jpg" alt="cachorro_adocao_bisteca" width="250px" height="250px">
-                <p>Bisteca</p>
-                <img src="imagens/pets para adocao/juca cortado.png" alt="cachorro_adocao_juca" width="250px" height="250px">
-                <p>Juca</p>
-                <img src="imagens/pets para adocao/adda cortado.jpg" alt="gato_adocao_adda" width="250px" height="250px">
-                <p>Adda</p>
-                <img src="imagens/pets para adocao/amora cortado.jpg" alt="cachorro_adocao_amora" width="250px" height="250px">
-                <p>Amora</p>
-                <img src="imagens/pets para adocao/guida cortado.jpg" alt="gato_adocao_guida" width="250px" height="250px">
-                <p>Guida</p>
-                <img src="imagens/pets para adocao/tulipa cortado.jpg" alt="cachorro_adocao_tulipa" width="250px" height="250px">
-                <p>Tulipa</p>
-                <img src="imagens/pets para adocao/pacoca cortado.jpg" alt="cachorro_adocao_paçoca" width="250px" height="250px">
-                <p>Paçoca</p>
-                <img src="imagens/pets para adocao/tuca cortado.jpg" alt="gato_adocao_tuca" width="250px" height="250px">
-                <p>Tuca</p>
+            </div>
+            
+            <div class="fotos_pets_adocao">
+                <div class="foto_pet_1">
+                    <img src="imagens/pets para adocao/bisteca cortado.jpg" alt="cachorro_adocao_bisteca">
+                    <p class="legenda">Bisteca</p>
+                </div>
+                    
+                <div class="foto_pet_2">
+                    <img src="imagens/pets para adocao/juca cortado.jpg" alt="cachorro_adocao_juca">
+                    <p class="legenda">Juca</p>
+                </div>
+                
+                <div class="foto_pet_3">
+                    <img src="imagens/pets para adocao/adda cortado.jpg" alt="gato_adocao_adda">
+                    <p class="legenda">Adda</p>
+                </div>
+                
+                <div class="foto_pet_4">
+                    <img src="imagens/pets para adocao/amora cortado.jpg" alt="cachorro_adocao_amora">
+                    <p class="legenda">Amora</p>
+                </div>
+                
+                <div class="foto_pet_5">
+                    <img src="imagens/pets para adocao/guida cortado.jpg" alt="gato_adocao_guida">
+                    <p class="legenda">Guida</p>
+                </div>
+                
+                <div class="foto_pet_6">
+                    <img src="imagens/pets para adocao/tulipa cortado.jpg" alt="cachorro_adocao_tulipa">
+                    <p class="legenda">Tulipa</p>
+                </div>
+                
+                <div class="foto_pet_7">
+                    <img src="imagens/pets para adocao/pacoca cortado.jpg" alt="cachorro_adocao_paçoca">
+                    <p class="legenda">Paçoca</p>
+                </div>
+                
+                <div class="foto_pet_8">
+                    <img src="imagens/pets para adocao/tuca cortado.jpg" alt="gato_adocao_tuca">
+                    <p class="legenda">Tuca</p>
+                </div>
             </div>
         </section>    
             
-        <section>
-            <div class="local">
+        <section class="local">
+            <div class="local-container">
                 <h1>Local</h1>
-                <p id="local_p1">Parque das Dunas, Av. Alm. Alexandrino de Alencar, s/n - Tirol, Natal -RN</p>
-                <p id="local_p2">O Parque das Dunas ou Bosque dos Namorados é uma reserva de 1.172 hectares de Mata Atlântica situada no coração de Natal. São diversos os atrativos oferecidos pelo parque, como museu, centro de pesquisas, parque infantil e uma extensa área verde para lazer e descanso.
-                </p>
-                <img src="imagens/parque/parque redimensionado.jpg">
-                <img src="imagens/parque/300px-Parquinhos redimensionado.jpg" alt="foto_parque_das_dunas">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63508.073140982924!2d-35.20140916674802!3d-5.819677593090349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffbdae0afecf%3A0x95e1e65967ca74da!2sParque%20das%20Dunas!5e0!3m2!1spt-BR!2sbr!4v1663647132978!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="infos_parque">
+                    <div>
+                        <p class="info_parque_p1">Parque das Dunas </p> 
+                        <p class="info_parque_p2">Av. Alm. Alexandrino de Alencar, s/n - Tirol, Natal -RN</p>
+                    </div>
+                        
+                    <p class="info_parque_p3">O Parque das Dunas ou Bosque dos Namorados é uma reserva de 1.172 hectares de Mata Atlântica situada no coração de Natal. São diversos os atrativos oferecidos pelo parque, como museu, centro de pesquisas, parque infantil e uma extensa área verde para lazer e descanso.</p>
+                </div>              
+                    
+                <div class="fotos_parque">
+                    <div class="fotos_parque_imagens">
+                        <div class="foto_parque_1">
+                            <img src="imagens/parque/parque redimensionado.jpg">
+                        </div>
+                            
+                        <div class="foto_parque_2">
+                            <img src="imagens/parque/300px-Parquinhos redimensionado.jpg" alt="foto_parque_das_dunas">
+                        </div>
+                    </div>
+                        
+                    <div class="mapa_parque">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63508.073140982924!2d-35.20140916674802!3d-5.819677593090349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffbdae0afecf%3A0x95e1e65967ca74da!2sParque%20das%20Dunas!5e0!3m2!1spt-BR!2sbr!4v1663647132978!5m2!1spt-BR!2sbr" width="800" height="614" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <a href="index.html"><img src="imagens/icons/icon logo patamiga/logo patamiga png.png" alt="logo" width="200px" height="200px"></a>
-        <img src="imagens/icons/icons redes sociais/whatsapp.png" alt="icone_whatsapp" width="50px" height="50px">
-        <img src="imagens/icons/icons redes sociais/instagram.png" alt="icone_instagram" width="50px" height="50px">
-        <img src="imagens/icons/icons redes sociais/facebook.png" alt="icone_facebook" width="50px" height="50px">
-        <p>Parque das Dunas | Tirol | Natal-RN</p>
-        <a href="mailto:patamiga@email.com">patamiga@email.com</a>
-        <p>Criado por: Ana Flávia Santiago de Andrade</p>
-    </footer>
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="footer_logo">
+                <a href="index.html"><img src="imagens/icons/icon logo patamiga/logo patamiga png.png" alt="logo_patamiga" width="200px" height="240px"></a>
+            </div>
     
+            <div class="footer_infos">
+                <div class="footer_links">
+                    <a class="rede-social" href="index.html"><img src="imagens/icons/icons redes sociais/whatsapp.png" alt="icone_whatsapp" width="80px" height="80px"></a>
+            
+                    <a class="rede-social" href="https://www.instagram.com/patamadaong/"><img src="imagens/icons/icons redes sociais/instagram.png" alt="icone_instagram" width="80px" height="80px"></a>
+                
+                    <a class="rede-social" href="https://pt-br.facebook.com/patamadaong/"><img src="imagens/icons/icons redes sociais/facebook.png" alt="icone_facebook" width="80px" height="80px"></a>
+                </div>
+                
+                <div class="footer_dados">
+                    <p>Parque das Dunas | Tirol | Natal-RN</p>
+    
+                    <p><a href="mailto:patamiga@email.com">patamiga@email.com</a></p>
+    
+                    <p class="criadora">Criado por: Ana Flávia Santiago de Andrade</p>
+                </div>
+            </div>   
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
