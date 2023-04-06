@@ -40,8 +40,9 @@ body{
 
 header {
     width: 100%;
-    height: 75vh;
-    background: url("imagens/banners/FEIRA DE ADOÇÃO banners/3 cortado novo3.png");
+    height: 82vh;
+    background: url("imagens/banners\ 2/3.png");
+    /*background: url("imagens/banners/FEIRA DE ADOÇÃO banners/3 cortado novo3.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
