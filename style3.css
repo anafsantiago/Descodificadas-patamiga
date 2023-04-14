@@ -1,14 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --branco-gelo: #f6f6f6;
+    --amarelo-claro: #ffdc52;
+    --amarelo-escuro: #fac600;
+    --azul-claro: #69d7d4;
+    --cinza: #666666;
+    --chumbo: #1c1c1c;
+    --preto: black;
+
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+    --fonte-menu: Arial, Helvetica, sans-serif;
+}
+
 body{
-    background-color: #f6f6f6;
+    background-color: var(--branco-gelo);
     min-height: 100vh;
 }
 
@@ -25,19 +40,13 @@ body{
 }
 
 .menu-topo.ativo{
-    background:#69d7d4;
+    background: var(--azul-claro);
     position: fixed;
 }
 
-.menu-topo.ativo li a {
-    color: black;
-}
-
-.menu-topo.ativo li a:hover{
-    color:rgb(61, 61, 61);
-}
 .menu li a:hover{
-    color:rgba(148, 148, 148, 0.664);
+    color:rgb(61, 61, 61);
+    border-radius: 3px;
 }
 
 .menu li a{
@@ -45,7 +54,7 @@ body{
 }
 
 .link-ativo {
-    border-bottom: 8px solid #ef6161;
+    border-bottom: 8px solid var(--amarelo-escuro);
 }
 
 header {
@@ -89,9 +98,9 @@ a, img {
 }
 
 .menu li a {
-    color: black;
+    color: var(--preto);
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-menu);
     padding-bottom: 13px;
 }
 
@@ -101,9 +110,9 @@ header li{
 
 .container{
     text-align: center;
-    color: #1c1c1c;
-    background-color: #69d7d4;
-    font-family: 'Poppins', sans-serif;
+    color: var(--chumbo);
+    background-color: var(--azul-claro);
+    font-family: var(--fonte-titulo);
     padding-top: 40px;
     padding-bottom: 40px;
     font-weight: bolder;
@@ -128,8 +137,8 @@ header li{
 }
 
 p {
-    color: #1c1c1c;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--chumbo);
+    font-family: var(--fonte-texto);
     font-size: 1.125em;
     line-height: 3;
     margin-left: 12em;
@@ -163,7 +172,7 @@ p {
 }
 
 .rodape{
-    background-color: #ffdc52;
+    background-color: var(--amarelo-claro);
 }
 
 .rodape-container{
@@ -202,7 +211,6 @@ footer p {
         margin-left: -5em;
     }
     
-
     p{
         font-size: 1.1em;
     }

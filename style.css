@@ -1,6 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+:root {
+    --branco-gelo: #f6f6f6;
+    --amarelo-claro: #ffdc52;
+    --amarelo-escuro: #fac600;
+    --azul-claro: #69d7d4;
+    --azul-escuro: #004aad;
+    --chumbo: #1c1c1c;
+    --preto: black;
+
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+    --fonte-menu: Arial, Helvetica, sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,14 +22,14 @@
 }
 
 body{
-    background-color: #f6f6f6;
+    background-color: var(--branco-gelo);
     min-height: 100vh;
 }
 
 h1{
     text-align: center;
-    color: #004aad;
-    font-family: 'Poppins', sans-serif;
+    color: var(--azul-escuro);
+    font-family: var(--fonte-titulo);
     font-size: 1.875em;
     padding-top: 5%;
     padding-bottom: 1.5%;
@@ -24,8 +38,8 @@ h1{
 
 p {
     text-align: center;
-    color: #1c1c1c;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--chumbo);
+    font-family: var(--fonte-texto);
     font-size: 1.125em;
     line-height: 1.6;
 }
@@ -43,7 +57,7 @@ p {
 }
 
 .menu-topo.ativo{
-    background:#69d7d4;
+    background: var(--azul-claro);
     position: fixed;
 }
 
@@ -53,7 +67,7 @@ p {
 }
 
 .link-ativo {
-    border-bottom: 8px solid #fac600;
+    border-bottom: 8px solid var(--amarelo-escuro);
 }
 
 header {
@@ -98,9 +112,9 @@ a, img {
 }
 
 .menu li a {
-    color: black;
+    color: var(--preto);
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-menu);
     padding-bottom: 11px;
 }
 
@@ -131,13 +145,13 @@ header li{
 }
 
 .pets_adocao h1{
-    color: #1c1c1c;
+    color: var(--chumbo);
     padding-top: 50px;
     padding-bottom: 0em;
 }
 
 .pets_adocao{
-    background-color: #69d7d4;
+    background-color: var(--azul-claro);
     padding: 0.625em 3.75em 3.75em 3.75em;
 }
 
@@ -158,8 +172,8 @@ header li{
 }
 
 .legenda {
-    font-family: 'Poppins', sans-serif;
-    color: black;
+    font-family: var(--fonte-titulo);
+    color: var(--preto);
     font-weight: bold;
 }
 
@@ -170,7 +184,7 @@ header li{
 }
 
 .botao button{
-    background-color: #fac600;
+    background-color: var(--amarelo-escuro);
     border: 10px;
     border-radius: 5%;
     padding: 3%;
@@ -233,7 +247,7 @@ header li{
 }
 
 .rodape{
-    background-color: #ffdc52;
+    background-color: var(--amarelo-claro);
 }
 
 .rodape-container{

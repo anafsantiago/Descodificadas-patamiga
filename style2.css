@@ -7,8 +7,23 @@
     box-sizing: border-box;
 }
 
+:root {
+    --branco-gelo: #f6f6f6;
+    --amarelo-claro: #ffdc52;
+    --amarelo-escuro: #fac600;
+    --azul-claro: #69d7d4;
+    --azul-escuro: #004aad;
+    --cinza: #666666;
+    --chumbo: #1c1c1c;
+    --preto: black;
+
+    --fonte-titulo: 'Poppins', sans-serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+    --fonte-menu: Arial, Helvetica, sans-serif;
+}
+
 body{
-    background-color: #f6f6f6;
+    background-color: var(--branco-gelo);
     min-height: 100vh;
 }
 
@@ -25,7 +40,7 @@ body{
 }
 
 .menu-topo.ativo{
-    background:#69d7d4;
+    background: var(--azul-claro);
     position: fixed;
 }
 
@@ -35,7 +50,7 @@ body{
 }
 
 .link-ativo {
-    border-bottom: 8px solid #fac600;
+    border-bottom: 8px solid var(--amarelo-escuro);
 }
 
 header {
@@ -80,9 +95,9 @@ a, img {
 }
 
 .menu li a {
-    color: black;
+    color: var(--preto);
     font-size: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fonte-menu);
     padding-bottom: 13px;
 }
 
@@ -92,9 +107,9 @@ header li{
 
 h1{
     text-align: center;
-    color: #1c1c1c;
-    background-color: #69d7d4;
-    font-family: 'Poppins', sans-serif;
+    color: var(--chumbo);
+    background-color: var(--azul-claro);
+    font-family: var(--fonte-titulo);
     font-size: 1.875em;
     padding-top: 5%;
     padding-bottom: 4%;
@@ -105,8 +120,8 @@ h1{
 
 h2{
     text-align: center;
-    color: #1c1c1c;
-    font-family: 'Poppins', sans-serif;
+    color: var(--chumbo);
+    font-family: var(--fonte-titulo);
     font-size: 1.75em;
     font-weight: bolder;
 }
@@ -116,16 +131,16 @@ h2{
 }
 
 #pet_infos{
-    color: #666666;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--cinza);
+    font-family: var(--fonte-texto);
     font-size: 1.125em;
     padding-top: 5%;
     padding-bottom: 1.5%;
 }
 
 p{
-    color: #1c1c1c;
-    font-family: 'Open Sans', sans-serif;
+    color: var(--chumbo);
+    font-family: var(--fonte-texto);
     font-size: 1.125em;
     line-height: 1.4;
     width: 31em;
@@ -153,7 +168,7 @@ p{
 }
 
 .rodape{
-    background-color: #ffdc52;
+    background-color: var(--amarelo-claro);
 }
 
 .rodape-container{
