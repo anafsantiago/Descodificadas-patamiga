@@ -9,6 +9,8 @@
     --azul-escuro: #004aad;
     --chumbo: #1c1c1c;
     --preto: black;
+    --preto-box-shadow: rgba(0,0,0,0.2);
+    --cinza-claro-borda: rgb(167, 167, 167);
 
     --fonte-titulo: 'Poppins', sans-serif;
     --fonte-texto: 'Open Sans', sans-serif;
@@ -54,16 +56,92 @@ p {
     left: 0;
     width: 100%;
     height: 58px;
+    box-shadow: 0px 0px 9px 0px var(--preto-box-shadow);
 }
 
 .menu-topo.ativo{
     background: var(--azul-claro);
     position: fixed;
+    box-shadow: 0px 0px 18px 0px var(--preto-box-shadow);
 }
 
 .menu li a:hover{
     color:rgb(61, 61, 61);
-    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.menu-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 3.125em;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li a {
+    color: var(--preto);
+    font-size: 1em;
+    font-family: var(--fonte-menu);
+    padding-bottom: 11px;
+}
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 150px;
+    background-color: #fffafa;
+    top: 28px;
+    border: 1px solid var(--cinza-claro-borda);
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px var(--preto-box-shadow);
+    z-index: 1;
+    font-family: var(--fonte-menu);
+}
+
+#dp1 {
+    width: 200px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    left: -10px;
+}
+
+.dropdown-content li {
+    padding: 20px 0px;
+    margin: 0px;
+    border-bottom: 1px solid var(--cinza-claro-borda);   
+}
+
+.dropdown-content li:last-child{
+    border-bottom: none;
+}
+
+.dropdown-content li a {
+    padding: 20px 55px 20px 20px;
+    margin: 0px;
+}
+
+.dropdown-content li:hover {
+    background-color: var(--amarelo-escuro);
+    transition: 0.3s;
+}
+
+.dropdown-content li:hover:first-child {
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.dropdown-content li:hover:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .link-ativo {
@@ -74,7 +152,6 @@ header {
     width: 100%;
     height: 82vh;
     background: url("imagens/banners\ 2/1.png");
-    /*background: url("imagens/banners/FEIRA DE ADOÇÃO banners/1\ cortado\ maisnovo4.png");*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -96,26 +173,9 @@ header img {
     margin: 0.9375em;
 }
 
-.menu{
-    display: flex;
-    flex-wrap: wrap;
-    padding-right: 3.125em;
-}
-
-.menu, ul {
-    list-style: none;
-}
-
 a, img {
     text-decoration: none;
     cursor: pointer;
-}
-
-.menu li a {
-    color: var(--preto);
-    font-size: 1em;
-    font-family: var(--fonte-menu);
-    padding-bottom: 11px;
 }
 
 header li{

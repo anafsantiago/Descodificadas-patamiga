@@ -25,21 +25,45 @@
             </div>
 
             <div class="menu">
-                <li>
-                    <a class="link-ativo" href="index.html" target="_self">Página Inicial</a>
-                </li>                
-                <li>
-                    <a href="participantes.html" target="_self">Pets</a>
-                </li>
-                <li>
-                    <a href="programacao.html" target="_self">Programação</a>
-                </li>
+                <ul class="menu-ul">
+                    <li class="dropdown">
+                        <a class="link-ativo" href="index.html" target="_self">Página Inicial</a>
+                        <ul class="dropdown-content" id="dp1">
+                            <li>
+                                <a href="#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="#formulario">Formulário</a>
+                            </li>
+                            <li>
+                                <a href="#pets-disponiveis">Pets Disponíveis</a>
+                            </li>
+                            <li>
+                                <a href="#local">Local</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="participantes.html" target="_self">Pets</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="programacao.html" target="_self">Programação</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="programacao.html#dia1">1º dia</a>
+                            </li>
+                            <li>
+                                <a href="programacao.html#dia2">2º dia</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>                 
         </nav>
     </header>
     
     <main>
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="sobre-texto">
                 <h1>Sobre a feira</h1>
                 <p>
@@ -58,7 +82,7 @@
             <h1>Participe! Adotar é um ato de amor!</h1>
 
             <div class="botao">
-                <a href="formulario.html" target="_blank"><button>Confirmar presença</button></a>
+                <a href="formulario.html" target="_blank"><button id="formulario">Confirmar presença</button></a>
             </div>
 
             <div class="icons">
@@ -86,7 +110,7 @@
         </section>    
             
         <section class="pets_adocao">
-            <div class="pets_titulo">
+            <div class="pets_titulo" id="pets-disponiveis">
                 <h1>Conheça os pets disponíveis para adoção</h1>
             </div>
             
@@ -133,7 +157,7 @@
             </div>
         </section>    
             
-        <section class="local">
+        <section class="local" id="local">
             <div class="local-container">
                 <h1>Local</h1>
                 <div class="infos_parque">

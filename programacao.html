@@ -24,22 +24,46 @@
             </div>
 
             <div class="menu">
-                <li>
-                    <a href="index.html" target="_self">Página Inicial</a>
-                </li>
-                <li>
-                    <a href="participantes.html" target="_self">Pets</a>
-                </li>
-                <li>
-                    <a class="link-ativo" href="programacao.html" target="_self">Programação</a>
-                </li>
+                <ul class="menu-ul">
+                    <li class="dropdown">
+                        <a href="index.html" target="_self">Página Inicial</a>
+                        <ul class="dropdown-content" id="dp1">
+                            <li>
+                                <a href="index.html#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="index.html#formulario">Formulário</a>
+                            </li>
+                            <li>
+                                <a href="index.html#pets-disponiveis">Pets Disponíveis</a>
+                            </li>
+                            <li>
+                                <a href="index.html#local">Local</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="participantes.html" target="_self">Pets</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="link-ativo" href="programacao.html" target="_self">Programação</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="#dia1">1º dia</a>
+                            </li>
+                            <li>
+                                <a href="#dia2">2º dia</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>                 
         </nav>
     </header>
     <main>
         <section class="programacao">
             <div class="programacao-container">
-                <div class="container">
+                <div class="container" id="dia1">
                     <h3>Dia 1</h3>
                     <h1>20 de agosto</h1>
                 </div>
@@ -63,7 +87,7 @@
                     <p id="p4">Encerramento do evento</p>
                 </div>
                 
-                <div class="container">
+                <div class="container" id="dia2">
                     <h3>Dia 2</h3>
                     <h1>21 de agosto</h1>
                 </div>

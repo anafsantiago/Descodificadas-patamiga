@@ -27,15 +27,39 @@
             </div>
 
             <div class="menu">
-                <li>
-                    <a href="index.html" target="_self">Página Inicial</a>
-                </li>
-                <li>
-                    <a class="link-ativo" href="participantes.html" target="_self">Pets</a>
-                </li>
-                <li>
-                    <a href="programacao.html" target="_self">Programação</a>
-                </li>
+                <ul class="menu-ul">
+                    <li class="dropdown">
+                        <a href="index.html" target="_self">Página Inicial</a>
+                        <ul class="dropdown-content" id="dp1">
+                            <li>
+                                <a href="index.html#sobre">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="index.html#formulario">Formulário</a>
+                            </li>
+                            <li>
+                                <a href="index.html#pets-disponiveis">Pets Disponíveis</a>
+                            </li>
+                            <li>
+                                <a href="index.html#local">Local</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="link-ativo" href="participantes.html" target="_self">Pets</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="programacao.html" target="_self">Programação</a>
+                        <ul class="dropdown-content">
+                            <li>
+                                <a href="programacao.html#dia1">1º dia</a>
+                            </li>
+                            <li>
+                                <a href="programacao.html#dia2">2º dia</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
             </div>                
         </nav>
     </header>
