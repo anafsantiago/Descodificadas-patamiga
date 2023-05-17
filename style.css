@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 :root {
     --branco-gelo: #f6f6f6;
     --amarelo-claro: #ffdc52;
@@ -175,7 +176,6 @@ header img {
 
 a, img {
     text-decoration: none;
-    cursor: pointer;
 }
 
 header li{
@@ -190,6 +190,62 @@ header li{
     margin-left: 5em;
     margin-right: 5em;
     padding-top: 1.875em;
+}
+
+section.cards {
+    background: url(imagens/icons/icons\ adocao/teste3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 37.5em;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+  
+section.cards div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    width: 23.25em;
+    height: 18.75em;
+    transition: .3s;
+}
+
+section.cards div.card:hover {
+    height: 20.625em;
+    transform: scale(1.1);
+}
+  
+section.cards div.card p {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    text-align: center;
+    color: var(--chumbo);
+    font-family: var(--fonte-titulo);
+    font-weight: bolder;
+}
+  
+section.cards div.card .card_icon {
+    width: 7.8125em;
+    height: 7.8125em;
+}
+  
+section.cards div.card img {
+    height: 100%;
+    width: 100%;
+}
+  
+section.cards div.card {
+    box-shadow: 20px 20px 50px -30px #858585;
 }
 
 .video{
@@ -251,19 +307,6 @@ header li{
     width: 25em;
     font-size: 0.9375em;
     cursor: pointer;
-}
-
-.icons {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 8.125em;
-    margin-bottom: 3.125em;
-}
-
-.icons img{
-    width: 10.625em;
 }
 
 .local {
@@ -341,13 +384,15 @@ footer p {
 }
 
 @media only screen and (min-width: 350px) and (max-width: 1000px) and (max-height: 950px){
+
+    .fotos_pets_adocao {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .fotos_pets_adocao img{
         max-width: 200px;
         max-height: 200px;
-    }
-
-    .icons > div{
-        padding: 15px;
     }
 
     p {
@@ -436,10 +481,36 @@ footer p {
     }   
 }
 
-@media only screen and (max-width: 900px) and (min-height: 1000px) {
+@media only screen and (max-width: 720px){
+    section.cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        height: 60em;
+    }
+
+    section.cards div.card .card_icon {
+        width: 4.8125em;
+        height: 4.8125em;
+    }
+    section.cards div.card {
+        width: 16.25em;
+        height: 14.75em;
+    }
+
+    section.cards div.card:hover {
+        height: 17.75em;
+    }
+
+    section.cards div.card p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
     .sobre{
         margin-bottom: 60px;
-        margin-top: -340px;
     }
 
     .mapa_parque iframe{
@@ -483,7 +554,7 @@ footer p {
         padding-left: 125px;
     }
 
-    .fotos_pets_adocao, .sobre-texto, .icons, .local-container, .rodape-container, .botao{
+    .fotos_pets_adocao, .sobre-texto, .local-container, .rodape-container, .botao{
         max-width: 1350px;
     }
 
@@ -503,7 +574,7 @@ footer p {
         max-width: 33em;
     }
 
-    .icons, .sobre{
+    .sobre{
         margin-bottom: -1em;
     }
 }
